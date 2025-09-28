@@ -18,6 +18,26 @@ Here are some main features of databases:
 * **Document databases** (or NoSQL databases): These types of database stores data as documents. The popular document databases are MongoDB, Databricks, and Amazon DynamoDB.
   ![1759076555258](image/Readme/1759076555258.png)
 
+# Relational Database Management Systems
+
+![1759077918122](image/Readme/1759077918122.png)
+
+****RDBMS**** stands for ****Relational Database Management Systems.**** A database is an organized collection of data stored in a computer system and usually controlled by a database management system (DBMS). The data in common databases is modeled in tables, making querying and processing efficient.
+
+## What is a Database Table?
+
+A table is a ****collection of related data**** in an organized manner in the form of rows and columns. It is an organized arrangement of data and information in **tabular form** containing rows and columns, making it easier to understand and compare data.
+
+![1759077979521](image/Readme/1759077979521.png)
+
+## Features of RDBMS
+
+* Data must be stored in tabular form in DB file, that is, it should be organized in the form of rows and columns.
+* Each row of table is called [record/tuple](https://www.geeksforgeeks.org/dbms/tuple-in-dbms/) . Collection of such records is known as the cardinality of the table
+* Each column of the table is called an attribute/field. Collection of such columns is called the arity of the table.
+* No two records of the DB table can be same. Data duplicity is therefore avoided by using a candidate key.
+* Tables are related to each other with the help for foreign keys.
+
 # What is SQL
 
 SQL is a standard language for accessing and manipulating databases.
