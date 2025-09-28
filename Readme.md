@@ -28,7 +28,6 @@ SQL lets you access and manipulate databases
 
 ![1759076659970](image/Readme/1759076659970.png)
 
-
 ## What Can SQL do?
 
 * SQL can execute queries against a database
@@ -52,10 +51,11 @@ SQL lets you access and manipulate databases
 
 # What is SQL Server
 
+![1759077683014](image/Readme/1759077683014.png)
+
 SQL Server is a relational database management system (RDBMS) developed and marketed by Microsoft. Also known as **MSSQL Server**
 
 Similar to other RDBMS software, SQL Server is built on top of [SQL](https://www.sqltutorial.org/), a standard programming language for interacting with relational databases.
-
 
 ## Usage of SQL Server
 
@@ -81,13 +81,10 @@ SQL's integration with various technologies makes it essential for managing and 
 
 ![1759075504270](image/Readme/1759075504270.png)
 
-
 SQL Server consists of two main components:
 
 * Database Engine
 * SQLOS
-
-
 
 ### 1. Database Engine
 
@@ -103,14 +100,11 @@ Some tasks of the relational engine include querying processing, memory manageme
 
 The storage engine is responsible for storing and retrieving data from the storage systems such as disks and SAN.
 
-
 ### 2. SQLOS
 
 Under the relational engine and storage engine lies the SQL Server Operating System, or SQLOS.
 
 SQLOS provides various operating system services such as memory and I/O management, as well as exception handling and synchronization services.
-
-
 
 # Microsoft SQL Server Management Studio (SSMS)
 
