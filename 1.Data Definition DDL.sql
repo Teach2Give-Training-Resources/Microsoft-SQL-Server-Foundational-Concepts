@@ -50,11 +50,13 @@ CREATE TABLE hr.person (
 
 INSERT INTO hr.person(first_name, last_name, gender)
 OUTPUT inserted.person_id
-VALUES('John','Doe', 'M');
+VALUES('John','Doe', 'M'),('Jane','Doe','F');
 
 INSERT INTO hr.person(first_name, last_name, gender)
 OUTPUT inserted.person_id
 VALUES('Jane','Doe','F');
+
+SELECT * FROM hr.person;
 
 --Resetting the identity column value
 DELETE FROM hr.person;

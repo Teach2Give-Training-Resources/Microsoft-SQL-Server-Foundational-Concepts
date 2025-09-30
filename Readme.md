@@ -133,3 +133,50 @@ To interact with SQL Server, you can use a SQL Server client tool such as SQL Se
 The SQL Server Management Studio is software for querying, designing, and managing SQL Server on your local computer, a remote server, or in the cloud. It provides you with tools to configure, monitor, and administer SQL Server instances.
 
 ![1759076592598](image/Readme/1759076592598.png)
+
+## Basic Level Questions
+
+1. **What is the difference between DELETE, DROP, and TRUNCATE commands?**
+   * DELETE: Removes specific rows from a table (can use WHERE clause)
+   * DROP: Removes the entire table structure and data
+   * TRUNCATE: Removes all rows from a table but keeps the structure
+2. **Explain the difference between PRIMARY KEY and UNIQUE constraint.**
+   * PRIMARY KEY: Uniquely identifies each record, cannot be NULL, only one per table
+   * UNIQUE: Ensures uniqueness but allows NULL values, can have multiple per table
+3. **What are the different types of SQL commands (DDL, DML, DCL)?**
+   * DDL (Data Definition Language): CREATE, ALTER, DROP
+   * DML (Data Manipulation Language): INSERT, UPDATE, DELETE, SELECT
+   * DCL (Data Control Language): GRANT, REVOKE
+
+## Intermediate Level Questions
+
+4. **What is the difference between INNER JOIN and LEFT JOIN?**
+   * INNER JOIN: Returns only matching records from both tables
+   * LEFT JOIN: Returns all records from left table and matching records from right table
+5. **Explain the concept of database normalization and its types.**
+   * Process of organizing data to reduce redundancy
+   * 1NF, 2NF, 3NF, BCNF - each with specific rules to eliminate anomalies
+6. **What is the difference between a clustered and non-clustered index?**
+   * Clustered: Physical ordering of data, one per table
+   * Non-clustered: Logical ordering, multiple allowed per table
+
+## Advanced Level Questions
+
+7. **How would you optimize a slow-performing SQL query?**
+   * Check execution plan
+   * Add appropriate indexes
+   * Rewrite complex subqueries as JOINs
+   * Use WHERE clauses to filter early
+   * Consider partitioning for large tables
+8. **Explain ACID properties in database transactions.**
+   * Atomicity: All or nothing
+   * Consistency: Data integrity maintained
+   * Isolation: Concurrent transactions don't interfere
+   * Durability: Changes persist after commit
+9. **What is the difference between a subquery and a CTE (Common Table Expression)?**
+   * Subquery: Query within another query, can be correlated or non-correlated
+   * CTE: Temporary named result set, more readable, can be recursive
+10. **How do you handle deadlocks in SQL Server?**
+    * SQL Server automatically detects and resolves deadlocks
+    * Prevention: consistent table access order, shorter transactions
+    * Detection: Use SQL Server Profiler or Extended Events
