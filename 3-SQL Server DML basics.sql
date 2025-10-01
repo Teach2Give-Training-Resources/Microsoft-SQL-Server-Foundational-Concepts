@@ -1,5 +1,8 @@
 DROP TABLE Customers;
 
+
+
+
 --create a table customers
 CREATE TABLE Customers (
     customer_id INT PRIMARY KEY,
@@ -36,6 +39,38 @@ VALUES
 (18, 'Irene', 'Naliaka', '0799900112', 'irene.naliaka@example.com', 'Westlands Road', 'Nairobi', '00606'),
 (19, 'Collins', 'Barasa', '0711223344', 'collins.barasa@example.com', 'Kenyatta Street', 'Eldoret', '30100'),
 (20, 'Esther', 'Wambui', '0722334455', 'esther.wambui@example.com', 'Moi Avenue', 'Nairobi', '00100');
+
+
+--Updating single row
+UPDATE Customers
+SET phone = '0799999999'
+WHERE customer_id = 5;
+
+
+--Updating multiple rows
+UPDATE Customers
+SET email = 'lucy.chebet@newmail.com',
+    city = 'Nairobi'
+WHERE customer_id = 10;
+
+--Update Many Rows at Once
+UPDATE Customers
+SET city = 'Uasin Gishu'
+WHERE city = 'Eldoret';
+
+
+--Deleting Rows from a Table
+DELETE FROM Customers
+WHERE customer_id = 20;
+
+--Delete Multiple Rows
+DELETE FROM Customers
+WHERE street = 'Kenyatta Street';
+
+--Delete All Rows (but keep table structure)
+DELETE FROM Customers;
+--TRUNCATE DOES THE SAME ALSO:
+TRUNCATE TABLE Customers;
 
 
                     --select all the customers
